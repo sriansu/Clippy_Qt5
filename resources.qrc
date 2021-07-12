@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>images/add.png</file>
+        <file>images/cut.png</file>
+        <file>images/delete.png</file>
+        <file>images/folder_open.png</file>
+        <file>images/new.png</file>
+        <file>images/page_copy.png</file>
+        <file>images/page_paste.png</file>
+        <file>images/save_as.png</file>
+        <file>images/save.png</file>
+        <file>images/start_listen.png</file>
+        <file>images/stop_listen.png</file>
+    </qresource>
+</RCC>

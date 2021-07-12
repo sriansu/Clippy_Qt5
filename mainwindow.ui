@@ -6,17 +6,161 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>688</width>
+    <height>448</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>31</y>
+      <width>241</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>688</width>
+     <height>24</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionnew"/>
+   <addaction name="actionopen"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionsave_As"/>
+   <addaction name="separator"/>
+   <addaction name="actionstart"/>
+   <addaction name="actionstop"/>
+   <addaction name="separator"/>
+   <addaction name="actioncopy_page"/>
+   <addaction name="actioncut"/>
+   <addaction name="actionpage_paste"/>
+   <addaction name="actiondelete"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/new.png</normaloff>:/files/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionadd">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/add.png</normaloff>:/files/images/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>add</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/cut.png</normaloff>:/files/images/cut.png</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/folder_open.png</normaloff>:/files/images/folder_open.png</iconset>
+   </property>
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actioncopy_page">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/page_copy.png</normaloff>:/files/images/page_copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy_page</string>
+   </property>
+  </action>
+  <action name="actionpage_paste">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/page_paste.png</normaloff>:/files/images/page_paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>page_paste</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/save.png</normaloff>:/files/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionsave_As">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/save_as.png</normaloff>:/files/images/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>save_As</string>
+   </property>
+  </action>
+  <action name="actionstart">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/start_listen.png</normaloff>:/files/images/start_listen.png</iconset>
+   </property>
+   <property name="text">
+    <string>start</string>
+   </property>
+  </action>
+  <action name="actionstop">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/stop_listen.png</normaloff>:/files/images/stop_listen.png</iconset>
+   </property>
+   <property name="text">
+    <string>stop</string>
+   </property>
+  </action>
+  <action name="actiondelete">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/files/images/delete.png</normaloff>:/files/images/delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>delete</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
