@@ -14,7 +14,7 @@
 #include<QCloseEvent>
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui { class Clippy; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -49,7 +49,7 @@ private slots:
     void timeout();
 
 private:
-    Ui::MainWindow *ui;
+    Ui::Clippy *ui;
     //vars
     QTimer m_timer;
     QString m_last;

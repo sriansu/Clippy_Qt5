@@ -3,8 +3,9 @@
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::Clippy)
 {
+
     ui->setupUi(this);
 
     setCentralWidget(ui->listView);
